@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메모장</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📝 메모장</h1>
+            <div class="controls">
+                <button id="newBtn">새 메모</button>
+                <button id="saveBtn">저장</button>
+                <button id="loadBtn">불러오기</button>
+                <button id="deleteBtn">삭제</button>
+            </div>
+        </header>
+        
+        <div class="main-content">
+            <div class="sidebar">
+                <h3>저장된 메모</h3>
+                <ul id="memoList"></ul>
+            </div>
+            
+            <div class="editor">
+                <input type="text" id="memoTitle" placeholder="메모 제목을 입력하세요..." />
+                <textarea id="memoContent" placeholder="메모 내용을 입력하세요..."></textarea>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
